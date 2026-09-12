@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GrooveLinker</title>
+<style>
+  :root{--ink:#17171c;--muted:#5d5d69;--line:#e3e3e8;--bg:#fbfaf7;--accent:#c8901f}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+    line-height:1.85;display:flex;min-height:100vh;align-items:center;justify-content:center}
+  .card{max-width:560px;padding:40px 24px;text-align:center}
+  .disc{width:56px;height:56px;border-radius:50%;background:#17171c;position:relative;margin:0 auto 20px}
+  .disc::after{content:"";position:absolute;inset:21px;border-radius:50%;background:var(--accent)}
+  h1{font-size:30px;margin:0 0 10px;letter-spacing:.01em}
+  p{color:#3a3a45;margin:0 0 26px}
+  a{color:#9a6a10}
+  .links a{margin:0 12px}
+  footer{margin-top:36px;color:var(--muted);font-size:13px}
+  @media (prefers-color-scheme:dark){
+    :root{--ink:#f2f2f5;--muted:#9a9aa6;--line:#2b2b33;--bg:#0e0e12;--accent:#e8b44a}
+    p{color:#dcdce2} a{color:#e8b44a}
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="disc"></div>
+    <h1>GrooveLinker</h1>
+    <p>ターンテーブルの前に iPhone を置くだけで、アナログ DJ の練習を採点・指導するアプリ。</p>
+    <p class="links"><a href="privacy.html">プライバシーポリシー</a><a href="mailto:sato-s@ideo.co.jp">お問い合わせ</a></p>
+    <footer>© 2026 IDEO ENTERTAINMENT INC.</footer>
+  </div>
+</body>
+</html>
