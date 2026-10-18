@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta name="apple-itunes-app" content="app-id=6811364629">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>プライバシーポリシー — GrooveLinker</title>
 <meta name="description" content="GrooveLinker（アナログDJ向けのビートマッチ練習アプリ）のプライバシーポリシー。練習の記録は端末内に保存され、録音は保存されません。">
@@ -47,7 +48,15 @@
     a{color:#e8b44a}
     code{background:#1d1d24}
   }
+  /* Store badges — official artwork, unaltered. Apple's at 45 px tall with at
+     least a quarter of its height clear around it; Google's PNG carries its
+     own margin, so it is drawn at 59 px for a visible 45. */
+  .stores{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;margin:0 0 26px}
+  .stores[hidden]{display:none}
+  .stores a{display:block;line-height:0}
+  .stores img{display:block}
 </style>
+<noscript><style>.stores[hidden]{display:flex}</style></noscript>
 </head>
 <body>
 <div class="wrap">
@@ -199,9 +208,14 @@
 <a href="mailto:sato-s@ideo.co.jp">sato-s@ideo.co.jp</a></p>
 
 <footer>
+  <div class="stores" hidden>
+      <a class="appstore" href="https://apps.apple.com/app/id6811364629?ct=web-privacy&amp;mt=8"><img src="badges/appstore-ja.svg" alt="App Store からダウンロード" width="135" height="45"></a>
+      <a class="play" href="https://play.google.com/store/apps/details?id=com.groovelinker.app&amp;referrer=utm_source%3Dgroovelinker.com%26utm_medium%3Dweb%26utm_campaign%3Dprivacy"><img src="badges/googleplay-ja.png" alt="Google Play で手に入れよう" width="151" height="59"></a>
+    </div>
   © 2026 IDEO ENTERTAINMENT INC. — GrooveLinker
 </footer>
 
 </div>
+<script src="stores.js"></script>
 </body>
 </html>
